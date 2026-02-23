@@ -11,7 +11,7 @@ Canny submission (feature/idea only)
   ↓
 PM reviews → sets status in Canny
   ↓
-  ├── Discovery - L1  →  pm-discovery  →  inc-prd-builder  →  inc-prd-figma-make  →  linear-sync (Epics + Stories)
+  ├── Discovery - L1  →  pm-discovery  →  inc-prd-builder  →  inc-prd-figjam-flow  →  inc-prd-figma-make  →  linear-sync (Epics + Stories)
   ├── Discovery - L2  →  pm-discovery  →  inc-epic-builder  →  linear-sync (Epic + Stories)
   └── Discovery - L3  →  pm-discovery  →  inc-story-builder  →  linear-sync (Story)
 ```
@@ -30,6 +30,7 @@ PM reviews → sets status in Canny
 |-------|-------|--------|
 | `pm-discovery` | Discovery | ✅ Active |
 | `inc-prd-builder` | Planning | ✅ Active |
+| `inc-prd-figjam-flow` | Design | ✅ Active |
 | `inc-prd-figma-make` | Design | ✅ Active |
 | `inc-epic-builder` | Planning | 🚧 Coming soon |
 | `inc-story-builder` | Planning | 🚧 Coming soon |

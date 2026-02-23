@@ -28,6 +28,7 @@ See [docs/pipeline.md](docs/pipeline.md) for the full workflow.
 ### Design
 | Skill | Description |
 |-------|-------------|
+| `inc-prd-figjam-flow` | PRD → FigJam UX flow map (precursor to Figma Make) |
 | `inc-prd-figma-make` | PRD → Figma Make screen specs and flows |
 
 ### Delivery
