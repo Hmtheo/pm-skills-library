@@ -17,6 +17,7 @@ See [docs/pipeline.md](docs/pipeline.md) for the full workflow.
 |-------|-------------|
 | `pm-discovery` | Canny-triggered discovery interview → discovery doc |
 | `discovery-interview` | Baseline discovery interview (reference) |
+| `pm-transcript-summarizer` | Source URL transcript → PM key points and big ideas with timestamps |
 
 ### Planning
 | Skill | Description |

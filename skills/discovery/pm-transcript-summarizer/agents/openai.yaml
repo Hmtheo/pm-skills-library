@@ -1,0 +1,4 @@
+interface:
+  display_name: "PM Transcript Summarizer"
+  short_description: "Summarize transcript URLs into PM key points with timestamps"
+  default_prompt: "Use $pm-transcript-summarizer and pull transcript content directly from the source URL, then return PM-focused key talking points and big ideas with timestamps for fast playback."
