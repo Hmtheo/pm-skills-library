@@ -6,6 +6,7 @@
 | Skill | Description |
 |-------|-------------|
 | `discovery-interview` | Baseline discovery interview (reference) |
+| `pm-transcript-summarizer` | Source URL transcript → PM key points and big ideas with timestamps |
 
 ### Planning
 | Skill | Description |
