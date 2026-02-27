@@ -1,6 +1,6 @@
 ---
 name: pm-discovery
-description: PM-focused discovery interview that uncovers the true user problem, measurable friction, and real-life impact before handing off to inc-prd-builder. Use when a PM or stakeholder wants to define a product opportunity, validate a user problem, or kick off a new feature.
+description: PM-focused discovery interview that uncovers the true user problem, measurable friction, and real-life impact before handing off to prd-increment-writer. Use when a PM or stakeholder wants to define a product opportunity, validate a user problem, or kick off a new feature.
 user-invocable: true
 model: claude-opus-4-6
 ---
@@ -173,7 +173,7 @@ Generate a discovery document and save it to `~/Documents/discovery-[feature-nam
 
 ---
 
-### Phase 7: Handoff to PRD Builder
+### Phase 7: Handoff to PRD Writer
 
 After saving the document, always offer the handoff:
 
@@ -181,9 +181,9 @@ Ask the user:
 > "Discovery doc saved to ~/Documents/. Ready to turn this into a PRD?"
 
 Options:
-- **Yes, build the PRD now** → Say: "Run `/inc-prd-builder` and paste in the discovery doc, or share the path and I'll feed it in."
-- **Review first** → "Take a look at the doc. When you're ready, run `/inc-prd-builder` to convert it into a full PRD with epics."
-- **Not yet** → "Saved for later. When you're ready, `/inc-prd-builder` will pick up from here."
+- **Yes, build the PRD now** → Say: "Run `/prd-increment-writer` and paste in the discovery doc, or share the path and I'll feed it in."
+- **Review first** → "Take a look at the doc. When you're ready, run `/prd-increment-writer` to convert it into a full PRD with epics."
+- **Not yet** → "Saved for later. When you're ready, `/prd-increment-writer` will pick up from here."
 
 ---
 

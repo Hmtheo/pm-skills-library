@@ -10,9 +10,9 @@
 ### Planning
 | Skill | Description |
 |-------|-------------|
-| `prd-increment-writer` | Discovery doc → L1 PRD with epics  Jira or Linear
-| `prd-epic-writer` | Discovery doc → L2 Epic for  Jira or Linear
-| `prd-story-writer` | Discovery doc → L3 Story for Jira or Linear 
+| `prd-increment-writer` | Discovery doc → L1 PRD with epics (Jira/Linear ready) |
+| `prd-epic-writer` | Discovery doc → L2 Epic for Linear 🚧 |
+| `prd-story-writer` | Discovery doc → L3 Story for Linear 🚧 |
 
 ### Design
 | Skill | Description |
