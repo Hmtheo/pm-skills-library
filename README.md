@@ -1,29 +1,18 @@
 # PM Skills Library
 
-Personal PM skills library for Claude Code. Covers the full pipeline from user idea to Linear work item.
-
-## Pipeline
-
-```
-Canny → Discovery Interview → PRD / Epic / Story → Figma → Linear
-```
-
-See [docs/pipeline.md](docs/pipeline.md) for the full workflow.
-
 ## Skills
 
 ### Discovery
 | Skill | Description |
 |-------|-------------|
-| `pm-discovery` | Canny-triggered discovery interview → discovery doc |
 | `discovery-interview` | Baseline discovery interview (reference) |
 
 ### Planning
 | Skill | Description |
 |-------|-------------|
-| `inc-prd-builder` | Discovery doc → L1 PRD with epics (Jira/Linear ready) |
-| `inc-epic-builder` | Discovery doc → L2 Epic for Linear 🚧 |
-| `inc-story-builder` | Discovery doc → L3 Story for Linear 🚧 |
+| `prd-increment-writer` | Discovery doc → L1 PRD with epics  Jira or Linear
+| `prd-epic-writer` | Discovery doc → L2 Epic for  Jira or Linear
+| `prd-story-writer` | Discovery doc → L3 Story for Jira or Linear 
 
 ### Design
 | Skill | Description |
