@@ -22,9 +22,9 @@ See [docs/pipeline.md](docs/pipeline.md) for the full workflow.
 ### Planning
 | Skill | Description |
 |-------|-------------|
-| `inc-prd-builder` | Discovery doc → L1 PRD with epics (Jira/Linear ready) |
-| `inc-epic-builder` | Discovery doc → L2 Epic for Linear 🚧 |
-| `inc-story-builder` | Discovery doc → L3 Story for Linear 🚧 |
+| `prd-increment-writer` | Discovery doc → L1 PRD with epics (Jira/Linear ready) |
+| `prd-epic-writer` | Discovery doc → L2 Epic for Linear 🚧 |
+| `prd-story-writer` | Discovery doc → L3 Story for Linear 🚧 |
 
 ### Design
 | Skill | Description |
