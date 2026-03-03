@@ -1,0 +1,187 @@
+```markdown
+---
+name: inc-prd-figma-make
+description: Convert epic/increment-level PRDs into high-fidelity Figma Make prototype build instructions that drive product-definition convergence and engineering readiness. Use when a user provides PRD material (complete or partial) and needs testable flows, screen/state behavior, FR/AC traceability, and implementation-mappable constraints for design and technical discovery. Do not use for visual-only concept exploration without functional or behavioral requirements.
+---
+
+# Epic/Increment PRD to Figma Make Convergence
+
+Produce prototype instructions that reduce ambiguity before build and increase implementation confidence for product, design, engineering, and coding agents.
+
+Primary outcome: a testable behavior model that enables epic/increment definition convergence and engineering execution.
+
+## Inputs
+
+Accept complete, partial, inconsistent, or draft PRDs.
+
+Extract and normalize when present:
+- Product area, increment/epic objective, and problem statement
+- Personas, jobs-to-be-done, and scenarios
+- In-scope and out-of-scope boundaries
+- Functional requirements (FRs)
+- Acceptance criteria (ACs)
+- Data rules, constraints, dependencies, risks, and NFRs
+- Metrics/KPIs and release success signals
+
+If information is missing, continue with explicit assumptions and unresolved questions.
+
+## Evidence Tags (mandatory)
+
+Tag every material statement with one of:
+- `[PRD]` explicitly stated in source
+- `[ASSUMED]` inferred due to missing detail
+- `[OPEN]` unresolved and needs decision
+
+Never present `[ASSUMED]` items as facts.
+
+## Workflow
+
+1. Parse and structure the PRD
+- Group into `Users`, `Goals`, `Core Flows`, `Data/Rules`, `Constraints`, `Success Signals`.
+- Preserve source IDs such as `FR-4`, `AC-2`.
+
+2. Build the behavior contract
+- Define primary and supporting journeys.
+- Define entry points, exits, decision nodes, empty/error/blocked states.
+- Define role and permission boundaries.
+
+3. Map to UI architecture
+- Convert journeys into screen-level flows.
+- Define screen purpose, components, state behavior, and data dependencies.
+- Ensure each mandatory requirement appears in at least one flow or screen.
+
+4. Generate Figma Make build instructions
+- Use executable verbs: `Create`, `Add`, `Configure`, `Connect`, `Show`, `Hide`, `Validate`.
+- Specify trigger, transition, validation, and system response details.
+
+5. Produce engineering delivery contract
+- Convert prototype behavior into implementation-mappable notes:
+- Events and payloads
+- Data contracts and validation rules
+- Error handling and fallback behavior
+- Non-functional and compliance constraints
+
+6. Add traceability and readiness validation
+- Build a matrix linking `FR/AC -> Flow -> Screen -> State -> Test`.
+- Flag `Covered`, `Partial`, `Missing`.
+- Compute readiness/confidence score and blockers.
+
+## Output format
+
+Return output in this exact section order.
+
+### 1) Convergence Brief
+- Product/feature name
+- Increment or epic name
+- Prototype objective
+- Convergence goal (what ambiguity is being reduced)
+- Primary personas
+- In-scope MVP boundary
+
+### 2) Assumptions and Decision Log
+- Assumptions `[ASSUMED]`
+- Open decisions `[OPEN]`
+- Out-of-scope declarations
+- For each open decision: owner and decision-by date (if available)
+
+### 3) Behavior Contract
+- Journey inventory
+- Roles and permissions
+- State model (normal, loading, empty, success, error, blocked)
+- Business-rule summary with evidence tags
+
+### 4) Information Architecture
+- Screen inventory (name + purpose)
+- Navigation model
+- Visibility by role
+
+### 5) End-to-End Flows
+For each flow:
+- Flow name
+- Persona
+- Entry condition
+- Steps (screen by screen)
+- Decision branches
+- Completion criteria
+- Failure/edge path
+- Linked FR/AC IDs
+
+### 6) Screen Specs for Figma Make
+For each screen:
+- Screen name
+- User intent
+- Components/regions
+- Default state
+- Interactive states (loading, empty, success, error, blocked)
+- Interactions (`trigger -> system response`)
+- Data fields and validation
+- Accessibility/localization constraints (if provided)
+- Linked FR/AC IDs
+
+### 7) Engineering Delivery Contract
+- Event definitions and payload expectations
+- Data entities and validation rules
+- API/service assumptions and dependency constraints
+- Error-handling behaviors
+- NFR/compliance implications
+- Copilot/agent implementation notes
+
+### 8) Edge Cases and Guardrails
+- Edge condition
+- Expected UX/system behavior
+- Safety/privacy/compliance treatment
+- Linked FR/AC IDs
+
+### 9) Traceability Matrix
+Use a compact table with columns:
+- `Requirement ID`
+- `Type (FR/AC)`
+- `Flow`
+- `Screen`
+- `State`
+- `Prototype Test`
+- `Coverage (Covered/Partial/Missing)`
+- `Notes`
+
+### 10) Prototype Build Sequence
+- Ordered build plan (low to high fidelity)
+- Reusable components to define first
+- Integration checkpoints
+- Deferred out-of-scope items
+
+### 11) Readiness and Validation
+- Functional checks mapped to ACs
+- Risk checks mapped to PRD risks
+- Coverage summary (`Covered`, `Partial`, `Missing`)
+- Prototype confidence score:
+- Behavior clarity (0-5)
+- Technical feasibility (0-5)
+- Testability (0-5)
+- Risk containment (0-5)
+- Overall readiness (`Ready`, `Conditionally Ready`, `Not Ready`) with blockers
+
+## Verbosity Mode
+
+Choose output depth based on source quality:
+- `Lean` for partial/draft PRDs: concise bullets, explicit unknowns, no filler.
+- `Standard` for reasonably complete PRDs.
+- `Deep` only when source detail supports high-fidelity behavior specification.
+
+## Style rules
+
+- Be concrete and operational.
+- Prefer concise bullets over narrative paragraphs.
+- Preserve domain language from the PRD.
+- Avoid visual styling advice unless explicitly requested.
+- Do not invent business rules; mark assumptions and open decisions.
+
+## Quality bar
+
+Before finalizing, verify:
+- Every core flow has at least one completion path and one failure or edge path.
+- Every in-scope mandatory FR appears in at least one flow or screen.
+- Every AC is testable in prototype terms.
+- Every `[ASSUMED]` and `[OPEN]` item is explicitly listed.
+- Traceability matrix has no unmapped mandatory requirements.
+- Out-of-scope items are explicitly excluded from build sequence.
+```
